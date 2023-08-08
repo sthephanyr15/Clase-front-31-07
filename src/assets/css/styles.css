@@ -1,0 +1,29 @@
+header{
+    background: #444444;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div .logo img{
+    height:150px;
+}
+
+header div:first-child{
+    display:flex;
+}
+
+header div .encabezado .titulo,
+header div .encabezado .clase,
+header div .encabezado .fuente{
+    color: #fff;
+}
+
+header.avatar-publicar, header .avatar-publicar .avatar{
+    display:flex;
+}
+
+header .avatar-publicar .avatar img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
