@@ -1,29 +1,117 @@
-header{
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
     background: #444444;
     display: flex;
     justify-content: space-between;
 }
 
-header div .logo img{
-    height:150px;
+header div .logo {
+    padding: 0 35px;
+    border-right: 2px solid #22bce0;
+    margin: 10px 0;
 }
 
-header div:first-child{
-    display:flex;
+header div .logo img {
+    height: 100px;
 }
 
-header div .encabezado .titulo,
-header div .encabezado .clase,
-header div .encabezado .fuente{
-    color: #fff;
+header div:first-child {
+    display: flex;
 }
 
-header.avatar-publicar, header .avatar-publicar .avatar{
-    display:flex;
+header div .encabezado {
+    margin: 10px 0;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-header .avatar-publicar .avatar img{
+header div .encabezado .titulo, 
+header div .encabezado .clase, 
+header div .encabezado .fuente {
+    color: white;
+}
+
+header div .encabezado .titulo h2 {
+    font-size: 18px;
+}
+
+header div .encabezado .clase {
+    margin-top: 5px;
+}
+
+header div .encabezado .clase h3 {
+    font-size: 14px;
+    font-style: italic;
+    color: #22bce0;
+    font-weight: bold;
+}
+
+header div .encabezado .fuente {
+    display: flex;
+    margin-top: 5px;
+    align-items: first baseline;
+}
+
+header div .encabezado .fuente p {
+   margin-right: 5px;
+   cursor: pointer;
+   color: #dd4f24;
+}
+
+header div .encabezado .fuente p:first-child {
+    font-size: 12px;
+}
+
+header div .encabezado .fuente p:last-child {
+    font-size: 20px;
+}
+
+header .avatar-publicar,
+header .avatar-publicar .avatar {
+    display: flex; 
+}
+
+header .avatar-publicar {
+    align-items: center;
+    margin-right: 30px;
+}
+
+header .avatar-publicar .btn {
+    background: #dd4f24;
+    padding: 5px 30px;
+    margin-right: -5px;
+}
+
+header .avatar-publicar .btn p {
+    color: white;
+    font-style: italic;
+}
+
+header .avatar-publicar .avatar .img-avatar {
+    margin-right: -5px;
+    z-index: 1;
+}
+
+header .avatar-publicar .avatar .img-avatar img {
     height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+    border-radius: 50%
+}
+
+header .avatar-publicar .avatar {
+    align-items: center;
+}
+
+header .avatar-publicar .avatar .menu {
+    background: #dd4f24;
+    height: fit-content;
+    padding: 5px 5px 5px 10px;
+}
+
+header .avatar-publicar .avatar .menu p {
+    color: white;
 }
