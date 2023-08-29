@@ -6,6 +6,7 @@ header {
     background: #444444;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 3px 2px 4px rgba(0,0,0,0.20);
 }
 
 header div .logo {
@@ -113,5 +114,60 @@ header .avatar-publicar .avatar .menu {
 }
 
 header .avatar-publicar .avatar .menu p {
+    color: white;
+}
+html nav ul{
+    display:flex;
+  }
+html nav{
+    padding: 15px 0px;
+    background: #22bce0;
+    box-shadow: opx 3px 2px 0px rgba(0,0,0,2);
+  }
+html nav ul li{
+    margin-right: 35px;
+  }
+html nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+html nav ul li:hover{
+    background:black;
+  }
+  section article{
+    width: 45%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5);
+  }
+  section article .contenido{
+    border-bottom:2px solid #22bce0;
+    display: flex;
+  }
+  section article .puntuacion{
+    display:flex;
+    justify-content: space-between;
+  }
+  footer{
+    background: #dd4f24;
+    padding: 50px 0px;
+  }
+    footer div {
+        display: flex;
+        justify-content: center;
+    }
+    footer div p {
+        display: flex;
+        flex-direction: column;
+        color:rgba(255,255,255,0.5);
+        font-weight: bold;
+    }
+    html footer div p span{
+        font-weight: normal;
+    }
+html footer div p span:before,
+html footer div p span:after{
+ content: " - ";
     color: white;
 }
