@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'iconos';
+    src:  url('../fonts/icon/icomoon.eot?x4y5m7');
+    src:  url('../fonts/icon/icomoon.eot?x4y5m7#iefix') format('embedded-opentype'),
+      url('../fonts/icon/icomoon.ttf?x4y5m7') format('truetype'),
+      url('../fonts/icon/icomoon.woff?x4y5m7') format('woff'),
+      url('../fonts/icon/icomoon.svg?x4y5m7#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -91,6 +103,16 @@ header .avatar-publicar .btn {
 header .avatar-publicar .btn p {
     color: white;
     font-style: italic;
+    position: relative;
+}
+header avatar-publicar btn p span{
+position: absolute;
+left:-55px;
+top:-15px;
+span: before;
+font-family:"iconos";
+    content: "\e908";
+    font-size: 45px;
 }
 
 header .avatar-publicar .avatar .img-avatar {
@@ -136,14 +158,26 @@ html nav ul li:hover{
     background:black;
   }
   section article{
-    width: 45%;
+    margin: 10px 0px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5);
   }
   section article .contenido{
     border-bottom:2px solid #22bce0;
     display: flex;
+  }
+  section article .contenido .informacion .titulo .autor{
+    margin-top: 15px;
+  }
+  section article .contenido .informacion .titulo .autor span{
+    color:#dd4f24;
+    text-decoration: underline;
+  }
+  section article .contenido .informacion .titulo{
+    font-weight: bold;
+    font-size: 10px;
+    font-style: italic;
+    margin-top: 10px;
   }
   section article .puntuacion{
     display:flex;
